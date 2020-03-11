@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -93,12 +97,17 @@
 
     </LinearLayout>
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:background="@drawable/bg_anim"
+        android:src="@drawable/bg_anim"></pl.droidsonroids.gif.GifImageView>
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="257dp"
         android:layout_height="234dp"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="44dp"
         android:onClick="sendit"
         android:textColor="?attr/textcolor"
@@ -107,8 +116,8 @@
     <Switch
         android:id="@+id/switch1"
         android:layout_width="176dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
         android:gravity="center"
         android:text="Night Mood"
         android:textColor="?attr/textcolor" />
@@ -121,3 +130,4 @@
         android:gravity="center"
         android:text="Developer : Gaurav Kabra | +91-8502806878 | gauravkabra.official@gmail.com" />
 </LinearLayout>
+</ScrollView>

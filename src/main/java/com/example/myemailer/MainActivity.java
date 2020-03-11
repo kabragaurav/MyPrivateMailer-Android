@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     try {
-                        GMailSender sender = new GMailSender("####@gmail.com",
-                                "@@@@@@");
+                        GMailSender sender = new GMailSender("gauravkabra240697@gmail.com",
+                                "gauravkabraisgreat");
                         sender.sendMail(sum.getText().toString(), msg.getText().toString(),
-                                "####bra240697@gmail.com", emailid.getText().toString());
+                                "gauravkabra240697@gmail.com", emailid.getText().toString());
                     } catch (Exception e) {
                         Log.e("SendMail", e.getMessage(), e);
                     }

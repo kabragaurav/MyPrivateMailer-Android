@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     try {
-                        GMailSender sender = new GMailSender("gauravkabra240697@gmail.com",
-                                "gauravkabraisgreat");
+                        GMailSender sender = new GMailSender("some_mail_addr@gmail.com",
+                                "some_password");
                         sender.sendMail(sum.getText().toString(), msg.getText().toString(),
                                 "gauravkabra240697@gmail.com", emailid.getText().toString());
                     } catch (Exception e) {
